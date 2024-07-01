@@ -1,0 +1,7 @@
+Flask
+dependency-injector
+pytest
+sqlalchemy
+alembic
+flask_pydantic
+pydantic
