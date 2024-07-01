@@ -18,7 +18,6 @@ class EmployeeRepository:
             get_all_employees_res = session.query(EmployeeModel).all()
             return get_all_employees_res
 
-    # todo : find a better way to map the employeemodel directly
     def save(self, employee: CreateEmployeeDTO):
         with self.session_factory() as session:
             new_employee = EmployeeModel(

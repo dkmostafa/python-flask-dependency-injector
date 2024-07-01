@@ -7,9 +7,6 @@ class EmployeeService:
         self.employee_repository = employee_repository
         pass
 
-    def get_employee(self, _employee_id: int):
-        return "get employee 123"
-
     def create_employee(self, _employee: CreateEmployeeDTO):
         res = self.employee_repository.save(_employee)
         return res

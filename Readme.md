@@ -12,6 +12,7 @@ Run The Following :
     pip install -r requriments
 
 # Run App
+    python src/app.py
 
 # Setup Sqlite Database :
 
@@ -20,6 +21,9 @@ Initialise alembic :
 
     alembic init alembic
     alembic upgrade head
+
+# Running tests:
+    pytest
     
 
     
