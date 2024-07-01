@@ -1,4 +1,3 @@
-import os
 from dependency_injector import containers, providers
 
 from ..db.database import Database
@@ -35,7 +34,3 @@ class EmployeeContainer(containers.DeclarativeContainer):
     repositories = providers.Container(EmployeeRepositories)
     services = providers.Container(EmployeeServices)
     controllers = providers.Container(EmployeeControllers)
-
-    # db_url = os.getenv('SQLALCHEMY_DATABASE_URI')
-    # db = providers.Singleton(Database, db_url=db_url)
-    # db_session = db.provided.session
